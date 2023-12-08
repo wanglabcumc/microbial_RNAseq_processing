@@ -20,33 +20,60 @@ Script to process raw data in FASTQ format for microbial RNA-seq (RNAtag-seq).
 
 All Input Parameters can be found and changed in configure.txt:
 
-	run_on_cluster:	TRUE or FALSE - if the program is running on a ParallelCluster (Amazon Web Services) or local computer 
-	number_of_core:	48 (numbers between 1 to 96) - numbers of CPU cores used for processing
+run_on_cluster:	TRUE or FALSE
+	- if the program is running on a ParallelCluster (Amazon Web Services) or local computer 
 
-	pipeline_bin_PATH: [path to folder] - path to the master folder for all binaries
-	house_bin_PATH: ./bin - local Python script for processing
+number_of_core:	48 (numbers between 1 to 96)
+	- numbers of CPU cores used for processing
 
-	output_script_PATH: ./script - path to output script files
-	output_temp_PATH: ./temp - path to temporary files
-	output_Stat_PATH: ./summary.txt - path to output stastics file
-	output_PATH: ./output - path to output folder containing results
+pipeline_bin_PATH: [path to folder]
+	- path to the master folder for all binaries
 
-	num_of_pool: 4 - number of pooled RNAtag-seq library
-	label: temp - prefix of output files
-	sample_info_dir: ./sampleInfo - path to sample information files
-	adapter_file: ./adapter.txt - path to adapter file
-	genome_dir: ./assembled_genome - path to reference genomes
-	strain_list: ./strainTotal - path to list of strains used in the processing
-	readsPrefix: ./rawdata - path to raw reads in FASTQ format
+house_bin_PATH: ./bin
+	- local Python script for processing
 
-	reads1_p1: Pool1.fastq.gz - file name of reads-1 for Pool1
-	reads2_p1: Pool1.fastq.gz - file name of reads-2 for Pool1
-	reads1_p2: Pool1.fastq.gz - file name of reads-1 for Pool2
-	reads2_p2: Pool1.fastq.gz - file name of reads-2 for Pool2
-	reads1_p3: Pool1.fastq.gz - file name of reads-1 for Pool3
-	reads2_p3: Pool1.fastq.gz - file name of reads-2 for Pool3
-	reads1_p4: Pool1.fastq.gz - file name of reads-1 for Pool4
-	reads2_p4: Pool1.fastq.gz - file name of reads-2 for Pool4
+
+output_script_PATH: ./script
+	- path to output script files
+
+output_temp_PATH: ./temp
+	- path to temporary files
+
+output_Stat_PATH: ./summary.txt
+	- path to output stastics file
+
+output_PATH: ./output
+	- path to output folder containing results
+
+num_of_pool: 2
+	- number of pooled RNAtag-seq library
+
+label: temp
+	- prefix of output files
+
+sample_info_dir: ./sampleInfo
+	- path to sample information files
+
+adapter_file: ./adapter.txt
+	- path to adapter file
+
+genome_dir: ./assembled_genome
+	- path to reference genomes
+
+strain_list: ./strainTotal
+	- path to list of strains used in the processing
+
+readsPrefix: ./rawdata
+	- path to raw reads in FASTQ format
+
+reads1_p1: Pool1.R1.fastq.gz
+reads2_p1: Pool1.R2.fastq.gz
+	- file name of reads-1&2 for Pool1
+
+reads1_p2: Pool1.R1.fastq.gz
+reads2_p2: Pool1.R2.fastq.gz
+	- file name of reads-1&2 for Pool2
+
 ```
 
 ### Output format
