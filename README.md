@@ -9,8 +9,10 @@ We have tested these scripts on Linux.
 * Python 2.7.15
 	- os
 	- sys
-* rnammer 1.2
-* cutadapt
+* rnammer v1.2
+* Cutadapt v2.1
+* Bowtie2
+* FeatureCount v1.62
 
 ### Description
 ```
