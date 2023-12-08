@@ -47,11 +47,12 @@ All Input Parameters can be found and changed in configure.txt:
 	reads2_p3: Pool1.fastq.gz - file name of reads-2 for Pool3
 	reads1_p4: Pool1.fastq.gz - file name of reads-1 for Pool4
 	reads2_p4: Pool1.fastq.gz - file name of reads-2 for Pool4
-
+```
 
 ### Output format
 
 ****[example of output stastics]****
+
 ```
 label	strain	condition	bio_rep	tech_rep	poolID	adapterID	total reads	reads with N	phiX reads	poly-G reads	reads passing all filters	reads passing all filters (ratio)	reads mapped to rRNA	rRNA mapping ratio	reads mapped to 23S	23S mapping ratio	reads mapped to 16S	16S mapping ratio	reads mapped to 5S	5S mapping ratio	reads mapped to genome	ratio of reads mapped to genome + rRNA	genome mapping ratio	reads after PCR removal	unique reads ratio	reads mapped to CDS	CDS mapping ratio
 P3wC11_Tet_1_1	P3wC11	Tet	1	1	pool1	adap1	1793144	524	2004	10177	1779506	0.992394364	3201	0.001798814	1870	0.58419244	863	0.269603249	468	0.146204311	1742304	0.980893012	0.98085858	96314	0.055279676	1593872	0.91480706
