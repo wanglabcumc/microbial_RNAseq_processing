@@ -15,18 +15,6 @@ def main():
                 "rnammer-1.2/rnammer " + configPara["pipeline_bin_PATH"] + "/rnammer-1.2/rnammer " + \
                 configPara["pipeline_bin_PATH"] + "/rnammer-1.2 " + configPara["pipeline_bin_PATH"] + "/hmmer-2.3.1/bin/hmmsearch")
     os.system("python " + configPara["pipeline_bin_PATH"] + "/script/modifyPythonProgramLoc.py " + configPara["pipeline_bin_PATH"] + \
-                "/anaconda2/bin/poretools " + configPara["pipeline_bin_PATH"] + "/anaconda2/bin/poretools " + \
-                configPara["pipeline_bin_PATH"] + "/anaconda2/bin/python2")
-    os.system("python " + configPara["pipeline_bin_PATH"] + "/script/modifyPythonProgramLoc.py " + configPara["pipeline_bin_PATH"] + \
-                "/anaconda2/bin/ipdSummary " + configPara["pipeline_bin_PATH"] + "/anaconda2/bin/ipdSummary " + \
-                configPara["pipeline_bin_PATH"] + "/anaconda2/bin/python2")
-    os.system("python " + configPara["pipeline_bin_PATH"] + "/script/modifyPythonProgramLoc.py " + configPara["pipeline_bin_PATH"] + \
-                "/binary/unicycler " + configPara["pipeline_bin_PATH"] + "/binary/unicycler " + \
-                configPara["pipeline_bin_PATH"] + "/anaconda3/bin/python")
-    os.system("python " + configPara["pipeline_bin_PATH"] + "/script/modifyPythonProgramLoc.py " + configPara["pipeline_bin_PATH"] + \
-                "/anaconda3/bin/unicycler " + configPara["pipeline_bin_PATH"] + "/anaconda3/bin/unicycler " + \
-                configPara["pipeline_bin_PATH"] + "/anaconda3/bin/python")
-    os.system("python " + configPara["pipeline_bin_PATH"] + "/script/modifyPythonProgramLoc.py " + configPara["pipeline_bin_PATH"] + \
                 "/anaconda3/bin/cutadapt " + configPara["pipeline_bin_PATH"] + "/anaconda3/bin/cutadapt " + \
                 configPara["pipeline_bin_PATH"] + "/anaconda3/bin/python")
     os.system("chmod +x " + configPara["house_bin_PATH"] + "/*")
